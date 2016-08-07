@@ -43,7 +43,7 @@
                     }
                 },
                 'json'
-            )
+            );
             return false;
         });
     });
