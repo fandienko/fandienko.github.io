@@ -385,6 +385,7 @@ body {
 }
 
 .benefits-list-number > span {
+    left: -5px;
     position: relative;
     vertical-align: top;
     display: inline-block;*display: inline;*zoom: 1;
@@ -402,7 +403,7 @@ body {
 }
 
 .benefits-list-item:first-child .benefits-list-number > span {
-    left: -6px;
+    left: -29px;
 }
 
 .benefits-list-item:first-child .benefits-list-number > span:after {
