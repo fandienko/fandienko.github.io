@@ -119,10 +119,13 @@ body {
 }
 
 .top-slide {
+    max-width: 1366px;
+    margin: 0 auto;
     height: 524px;
     position: relative;
     z-index: 1;
 }
+
 
 .top-slide-image {
     position: relative;
@@ -544,6 +547,11 @@ input:focus:-ms-input-placeholder {
     -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease;
     cursor: pointer;
+}
+
+.order-form-submit > span:hover {
+    color: #fff;
+    background-color: #faa61f;
 }
 
 .order-form {
