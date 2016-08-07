@@ -438,6 +438,10 @@ body {
     margin: 27px 0 0;
 }
 
+.order-form-buttons {
+    margin: 44px 0 0;
+}
+
 .text-input {
     width: 273px;
     height: 21px;
@@ -532,7 +536,6 @@ input:focus:-ms-input-placeholder {
 .order-form-submit > span {
     display: block;
     border: 4px solid #faa61f;
-    width: 242px;
     height: 46px;
     text-align: center;
     background: #fff;
@@ -566,7 +569,18 @@ input:focus:-ms-input-placeholder {
     position: relative;
 }
 
-.site-footer:after {
+.site-footer .block {
+    height: 100%;
+}
+
+.site-footer .block:before {
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;*display: inline;*zoom: 1;
+}
+
+.site-footer:before {
     content: '';
     left: 0;
     top: -41px;
@@ -576,4 +590,272 @@ input:focus:-ms-input-placeholder {
     padding: 41px 0 0;
     background: url(../images/footer.svg) no-repeat 100% 0;
     background-size: 384px auto;
+}
+
+.to-top {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    left: 100%;
+    top: -105px;
+    margin: 0 0 0 -7.3%;
+}
+
+.to-top:before,
+.to-top:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/to-top.svg) no-repeat 0 0;
+    background-size: 100% 100%;
+    -webkit-transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease;
+}
+
+
+.to-top:after {
+    background: url(../images/to-top-a.svg) no-repeat 0 0;
+    background-size: 100% 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.to-top:hover:after {
+    opacity: 1;
+    filter: alpha(opacity=100%);
+}
+
+.footer-contacts {
+    vertical-align: middle;
+    display: inline-block;*display: inline;*zoom: 1;
+    margin: 0 0 0 29.9%;
+    font-size: 15px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.footer-right {
+    float: right;
+    height: 100%;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.footer-right:after {
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;*display: inline;*zoom: 1;
+}
+
+.to-site {
+    vertical-align: middle;
+    display: inline-block;*display: inline;*zoom: 1;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.to-site:hover {
+    color: #faa61f;
+}
+
+body.message-success .site-wrapper:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.58;
+    filter: alpha(opacity=58%);
+    z-index: 300;
+}
+
+.message {
+    position: fixed;
+    padding: 34px 0 37px;
+    left: -4500px;
+    top: 50%;
+    width: 618px;
+    margin: -156px 0 0 -309px;
+    -webkit-border-radius: 14px;
+       -moz-border-radius: 14px;
+             border-radius: 14px;
+    background: #fff;
+    z-index: 500;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease;
+}
+
+body.message-success .message {
+    left: 50%;
+    opacity: 1;
+    filter: alpha(opacity=100%);
+}
+
+.message-title {
+    padding: 68px 0 0;
+    position: relative;
+    text-align: center;
+    font-family: 'days-black', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.message-title:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 51px;
+    background: url(../images/check.svg) no-repeat 50% 0;
+    background-size: 60px 51px;
+}
+
+.message-text {
+    margin: 37px 0 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.message-text p {
+    margin: 37px 0 0;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 16px;
+    top: 16px;
+}
+
+.close:before,
+.close:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/close.svg) no-repeat 0 0;
+    background-size: 100% 100%;
+    -webkit-transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease;
+}
+
+
+.close:after {
+    background: url(../images/close-a.svg) no-repeat 0 0;
+    background-size: 100% 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.close:hover:after {
+    opacity: 1;
+    filter: alpha(opacity=100%);
+}
+
+.footer-logo {
+    margin: 0 0 0 33px;
+    vertical-align: middle;
+    display: inline-block;*display: inline;*zoom: 1;
+    width: 242px;
+    height: 64px;
+    background: url(../images/footer-logo.svg) no-repeat 0 0;
+    background-size: 242px 63px;
+}
+
+.header-order .order-form {
+    width: 225px;
+    padding: 52px 12.5px 28px;
+    background: #fff;
+    -webkit-border-radius: 23px;
+       -moz-border-radius: 23px;
+             border-radius: 23px;
+}
+
+.header-order .text-input {
+    width: 177px;
+    text-align: left;
+}
+
+.header-order .order-form-submit {
+    width: 100%;
+}
+
+.header-order .order-form-row {
+    margin: 8px 0 0;
+}
+
+.header-order .order-form-buttons {
+    margin: 26px 0 0;
+}
+
+.order-form-popup {
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+}
+
+.header-order.active .order-form-popup {
+    height: 355px;
+    opacity: 1;
+    filter: alpha(opacity=100%);
+}
+
+.header-order ::-webkit-input-placeholder {
+    text-align: left;
+}
+.header-order ::-moz-placeholder {
+    text-align: left;
+}
+.header-order :-moz-placeholder {
+    text-align: left;
+}
+.header-order :-ms-input-placeholder {
+    text-align: left;
+}
+
+@media (max-width: 1200px) {
+    .header-phone {
+        margin-left: 6.23%;
+    }
+    .benefits-list-text {
+        font-size: 17px;
+    }
+
+    .footer-contacts {
+        margin-left: 13.9%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .header-phone {
+        margin-left: 3.23%;
+    }
+    .block {
+        padding: 0 3.3%;
+    }
+    .benefits-list-text {
+        font-size: 16px;
+    }
+    .footer-contacts {
+        margin-left: 16.37%;
+    }
 }

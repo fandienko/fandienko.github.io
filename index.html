@@ -3,8 +3,6 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <title>ЭНИТЕЛЬ - facility services</title>
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-		<link rel="apple-touch-icon" href="favicon.png">
 
         <!--[if lt IE 9]>
 	        <script src="/bitrix/templates/berezka/scripts/html5.min.js?1443604669117" type="text/javascript"></script>
@@ -27,6 +25,24 @@
 
                     <div class="header-order">
                         <span class="order-form-btn">Оставить заявку</span>
+                        <div class="order-form-popup">
+                            <div class="order-form">
+                                <form action="#" class="js-order-form">
+                                    <div class="order-form-row">
+                                        <input type="text" name="name" class="text-input" required placeholder="Ваше имя:">
+                                    </div>
+                                    <div class="order-form-row">
+                                        <input type="tel" name="phone" class="text-input js-phone" required placeholder="Ваш телефон:">
+                                    </div>
+                                    <div class="order-form-row">
+                                        <input type="email" name="email" class="text-input" required placeholder="Ваш e-mail:">
+                                    </div>
+                                    <div class="order-form-buttons">
+                                        <button class="order-form-submit" type="submit" value="submit"><span>Оставить заявку</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </header>
@@ -179,26 +195,49 @@
                     <div class="section-title">Оставьте заявку прямо сейчас!</div>
 
                     <div class="order-form">
-                        <form action="#">
+                        <form action="#" class="js-order-form">
                             <div class="order-form-row">
-                                <input type="text" class="text-input" placeholder="Ваше имя:">
+                                <input type="text" name="name" class="text-input" required placeholder="Ваше имя:">
                             </div>
                             <div class="order-form-row">
-                                <input type="tel" class="text-input" placeholder="Ваш телефон:">
+                                <input type="tel" name="phone" class="text-input js-phone" required placeholder="Ваш телефон:">
                             </div>
                             <div class="order-form-row">
-                                <input type="email" class="text-input" placeholder="Ваш e-mail:">
+                                <input type="email" name="email" class="text-input" required placeholder="Ваш e-mail:">
                             </div>
-                            <div class="order-form-row">
+                            <div class="order-form-buttons">
                                 <button class="order-form-submit" type="submit" value="submit"><span>Оставить заявку</span></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <footer class="site-footer"></footer>
+            <footer class="site-footer">
+                <div class="block">
+                    <a href="#" class="to-top"></a>
+                    <div class="footer-contacts">
+                        142700, Московская область,<br>
+                        Ленинский район, г. Видное,<br>ул. Ольховая, дом 9, помещение<br>
+                        Тел./факс: +7 (495) 225-55-07
+                    </div>
+                    <div class="footer-right">
+                        <a href="#" class="to-site">перейти на основной сайт</a>
+                        <a href="#" class="footer-logo"></a>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="message">
+                <div class="message-title">Спасибо!</div>
+                <div class="message-text">
+                    <p>Ваша заявка успешно отправлена.</p>
+                    <p>Мы свяжемся с вами в ближайшее время<br>для обсуждения оптимального решения.</p>
+                </div>
+                <a href="#" class="close"></a>
+            </div>
     	</section>
 
+        <script src="scripts/jquery-3.1.0.min.js" type="text/javascript"></script>
         <script src="scripts/main.js" type="text/javascript"></script>
 
     </body>
