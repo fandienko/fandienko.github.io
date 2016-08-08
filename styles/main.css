@@ -58,9 +58,17 @@ body {
     vertical-align: middle;
     display: inline-block;*display: inline;*zoom: 1;
     width: 300px;
-    height: 74px;
+    height: auto;
     background: url(../images/logo.svg) no-repeat 0 0;
-    background-size: 300px 74px;
+    background-size: 300px auto;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    filter: alpha(opacity=0);
 }
 
 .header-phone {
@@ -775,6 +783,14 @@ body.message-success .message {
     height: 64px;
     background: url(../images/footer-logo.svg) no-repeat 0 0;
     background-size: 242px 63px;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+    filter: alpha(opacity=0);
 }
 
 .header-order .order-form {
